@@ -58,4 +58,18 @@ public class Trainer {
             System.out.println(pokemon.getSpezies() + " ist ausgebrochen!");
         }
     }
+
+    public int getKampffaehigePokemon() {
+        int counter = 0;
+        for (int i = 0; i < 6; i++) {
+            if (teamPokemon[i] != null && teamPokemon[i].getHP() > 0)
+                counter++;
+        }
+        return counter;
+    }
+
+    //Trainer AI can go here
+    public int battleInput() {
+        return 1;
+    }
 }
