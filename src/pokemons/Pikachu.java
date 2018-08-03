@@ -6,9 +6,10 @@ public class Pikachu extends Pokemon {
 
     private static final String spezies = "pokemons.Pikachu";
     private static final int fangchance = 50;
+    private static final String description = "bla";
 
     public Pikachu(int pokedexNr, String name, int maxHP) {
-        super(pokedexNr, name, maxHP);
+        super(pokedexNr, name, description);
     }
 
     @Override
